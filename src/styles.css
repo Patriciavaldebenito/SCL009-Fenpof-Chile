@@ -4,69 +4,8 @@
     padding: 0;
 }
 
-/* You can add global styles to this file, and also import other style files */
-.container-fluid{
-    margin: 0 auto;
-    background: #A2C7E2;
-    max-width: 1200px;
+h1,h4{
+  font-weight: 800;
 }
 
-
-
-table {
-  margin: auto;
-  width: 1200px;
-
-}
-
-.imagebox {
-  max-width: 350px;
-  min-height: 250px;  
-   
-    
-    padding: 0px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .imagebox img {
-    opacity: 1;
-    transition: 0.5s opacity;
-    max-width: 350px;
-    max-height: 250px;   
-   
-  }
-  
-  .imagebox .imagebox-desc {
-    background-color: rgba(0, 0, 0, 0.6);
-    bottom: 0px;
-    color: white;
-    font-size: 1.2em;
-    left: 0px;
-    padding: 10px 15px;
-    position: absolute;
-    transition: 0.5s padding;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .imagebox:hover img {
-    opacity: 0.7;
-  }
-  
-  .imagebox:hover .imagebox-desc {
-    padding-bottom: 10%;
-  }
-  
-  /*                 hr                 */
-  .line-h{
-    border: 1px solid #99A3A4;
-  }
-
- .t-table{
-   padding: 1em;
- }
-
- 
-
+p{text-align: justify;}
