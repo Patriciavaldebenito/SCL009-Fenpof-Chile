@@ -1,3 +1,28 @@
-<h3>Testimonios:</h3>
-<hr>
-<img src="../../../assets/img/WhatsApp Image 2019-08-08 at 10.22.43 AM.jpg" alt="">
+<section class="p-4 mx-0">
+
+    <div class="row mx-4">
+  
+      <div class="col-12  py-2">
+        <h2>Testimonios</h2>
+        
+      </div>
+  
+      <div class="col-12 container-description-about pt-5 pb-2 ">
+        <div class="mx-1">
+          
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 container-support-content" *ngFor="let support of supports" style="min-height: 250px;" >
+                    <p>{{ support.contentSupport }}</p>
+                    <h5>{{ support.alias }}</h5>
+                </div>
+
+            </div>
+
+        </div>
+  
+      </div>
+  
+  
+    </div>
+  
+  </section>

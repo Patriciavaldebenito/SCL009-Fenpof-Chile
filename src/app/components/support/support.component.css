@@ -1,0 +1,11 @@
+h5{text-align: end;}
+
+
+
+
+.container-support-content{padding-left: 1rem !important;}
+
+
+@media(min-width:575px){
+    .container-support-content{padding-left: 5rem !important;}
+}

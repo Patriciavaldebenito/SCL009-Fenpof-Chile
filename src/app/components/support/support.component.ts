@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Support } from 'src/app/interface/support';
+import { SupportService } from 'src/app/services/support/support.service';
 
 @Component({
   selector: 'app-support',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./support.component.css']
 })
 export class SupportComponent implements OnInit {
-
-  constructor() { }
+  supports:Support[];
+  constructor(public supportService:SupportService) {
+    this.supports=this.supportService.getSupports();
+   }
 
   ngOnInit() {
   }

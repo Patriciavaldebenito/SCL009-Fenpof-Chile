@@ -1,0 +1,15 @@
+.header-organization{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.header-organization h3{text-align: center;}
+.header-organization img{   margin-right: 15px;}
+
+
+@media(min-width:575px){
+    .header-organization{justify-content: start;}
+    .header-organization h3{text-align:start;}
+}

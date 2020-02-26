@@ -10,25 +10,35 @@
 
 
     <div class="col-12  py-2  mx-1">
-      
-            <div class="mx-5">
-              
-              <ng-container  *ngFor="let Data of posts">
-                <h3>{{Data.name}}</h3>
-                <div  *ngIf="Data.imgBoolean" class="containerImgOrganization">
-                  <img src="{{ Data.srcImg }}" alt="imagen coorporativa o representativa de {{ Data.name }}" style="height: 150px;">
-                </div>
-          
-                 <ul>
-                   <li>{{ Data.representative }}</li>
-                   <li>{{ Data.contact }}</li>
-                   <li>{{ Data.email }}</li>
-                   <li><a href="{{ Data.website }}">Visita el Sitio Web</a></li>
-                   <br>
-                 </ul>
-              </ng-container>
-             
-            </div>     
+
+      <div class="mx-5">
+
+        <ng-container *ngFor="let Data of posts">
+          <div class="header-organization">
+            <img src="../../../assets/img/figura-geometrica.png" alt="">
+            <h3>{{Data.name}}</h3>
+          </div>
+  
+          <div *ngIf="Data.imgBoolean" class="containerImgOrganization">
+            <img src="{{ Data.srcImg }}" alt="imagen coorporativa o representativa de {{ Data.name }}" class="img-fluid"
+              style="height: 150px;">
+          </div>
+          <div class="information-data-organization pt-5 mx-5">
+            <ul>
+              <li>{{ Data.representative }}</li>
+              <li>{{ Data.contact }}</li>
+              <li>{{ Data.email }}</li>
+              <li><a href="{{ Data.website }}">Visita el Sitio Web</a></li>
+              <br>
+            
+            </ul>
+          </div>
+          <hr>
+          <br>
+
+        </ng-container>
+
+      </div>
 
     </div>
 
