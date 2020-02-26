@@ -1,9 +1,11 @@
 export class Data {
-    id: string;
-    // img:any;
+    id: Number;
+    name:string;
     website:any;
     representative: string;
     contact: number;
     email: string;
-    image?: any;
+    imgBoolean?:Boolean;
+    srcImg?:string
+
 }

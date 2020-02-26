@@ -2,7 +2,8 @@
   <div class="row">
 
     <div class=" col-md-3 col-lg-3 col-xl-3  container-imagen-logo">
-      <img src="../../../assets/img/logon.jpg" alt="Logo IMAGEN Fundacion Fenpof" class="img-fluid imagen-logo" routerLink="/home" /> 
+      <img src="../../../assets/img/logon.jpg" alt="Logo IMAGEN Fundacion Fenpof" class="img-fluid imagen-logo"
+        routerLink="/home" />
     </div>
     <div class="col-md-9 col-lg-9 col-xl-9 container-title-and-description">
       <div class="container-style-flex">
@@ -14,83 +15,85 @@
 
     <div class="col-12">
       <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false">
+      <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false">
 
-  <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand ancla-navbar" href="#"> <b> FENPOF </b> </a></mdb-navbar-brand>
+        <!-- Navbar brand -->
+        <mdb-navbar-brand><a class="navbar-brand ancla-navbar" href="#"> <b> FENPOF </b> </a></mdb-navbar-brand>
 
-  <!-- Collapsible content -->
-  <links>
+        <!-- Collapsible content -->
+        <links>
 
-    <!-- Links -->
-    <ul class="navbar-nav mr-auto ">
-      <li class="nav-item active px-3">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/about">Nosotros<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/information">Información</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/organization">Organizaciones</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/events">Eventos</a>
-      </li>
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active px-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/about">Nosotros<span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/information">Información</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/organization">Organizaciones</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/events">Eventos</a>
+            </li>
 
-      <!-- Dropdown -->
-      <li class="nav-item dropdown px-3" dropdown>
-        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Galería y más<span class="caret"></span></a>
-        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/galery"><b>Galería</b></a>
-          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/support">Testimonios</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/public">información Legal</a>
-          <div class="divider dropdown-divider"></div>
-          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/redsocial">Redes Sociales</a>
-        </div>
-      </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown px-3" dropdown>
+              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
+                mdbWavesEffect>
+                Galería y más<span class="caret"></span></a>
+              <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/galery"><b>Galería</b></a>
+                <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/support">Testimonios</a>
+                <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/public">información Legal</a>
+                <div class="divider dropdown-divider"></div>
+                <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/redsocial">Redes Sociales</a>
+              </div>
+            </li>
 
-    </ul>
-    <!-- Links -->
+          </ul>
+          <!-- Links -->
 
-    <ul class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item">
-        <a class="nav-link">
-          <mdb-icon fab icon="twitter"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">
-          <mdb-icon fab icon="google-plus"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">
-          <div class="btn-group" mdbDropdown>
-            <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
-            <div class="dropdown-menu dropdown-menu-right dropdown-primary">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="divider dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </links>
-  <!-- Collapsible content -->
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link">
+                <mdb-icon fab icon="twitter"></mdb-icon>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <mdb-icon fab icon="google-plus"></mdb-icon>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <div class="btn-group" mdbDropdown>
+                  <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </links>
+        <!-- Collapsible content -->
 
-</mdb-navbar>
-<!--/.Navbar-->
+      </mdb-navbar>
+      <!--/.Navbar-->
     </div>
   </div>
- 
-  
 
-   
-      
+
+
+
+
 
 </header>
 
