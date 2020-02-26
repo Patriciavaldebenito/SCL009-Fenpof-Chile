@@ -4,12 +4,12 @@ import { AngularFireAuth } from '@angular/fire/auth';
 
 
 @Component({
-  selector: 'app-navbar-footer',
-  templateUrl: './navbar-footer.component.html',
-  styleUrls: ['./navbar-footer.component.css']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
 })
 
-export class NavbarFooterComponent implements OnInit {
+export class NavbarComponent implements OnInit {
   public isLogged: boolean = false;
   public adminLetter: string = "";
 

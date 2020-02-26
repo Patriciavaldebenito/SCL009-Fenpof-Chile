@@ -25,9 +25,16 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/scss/font-awesome.scss",     "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss",
+              "node_modules/angular-bootstrap-md/assets/scss/mdb.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/mdbootstrap/js/mdb.js",
+              "node_modules/chart.js/dist/Chart.js",
+              "node_modules/hammerjs/hammer.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -116,6 +123,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "SCL009-Fenpof-Chile"
+    }
+  },
+  "defaultProject": "SCL009-Fenpof-Chile",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,NO_ERRORS_SCHEMA } from '@angular/core';
+
+import { MDBBootstrapModule} from 'angular-bootstrap-md';
 
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NavbarFooterComponent } from './components/navbar-footer/navbar-footer.component';
+
 
 import { AngularFireModule } from '@angular/fire'; //ok
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -12,7 +14,7 @@ import { environment } from 'src/environments/environment';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 
-
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/administrator/login/login.component';
 import { AboutComponent } from './components/about/about.component';
 import { InformationComponent } from './components/information/information.component';
@@ -34,13 +36,14 @@ import { ImagesComponent } from './components/administrator/images/images.compon
 import { ImageListComponent } from './components/administrator/images/image-list/image-list.component';
 import { ImageComponent } from './components/administrator/images/image/image.component';
 import { HomeComponent } from './components/home/home.component';
+import { RedsocialComponent } from './redsocial/redsocial.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarFooterComponent,
+    NavbarComponent,
     LoginComponent,
     AboutComponent,
     InformationComponent,
@@ -55,7 +58,8 @@ import { HomeComponent } from './components/home/home.component';
     ImagesComponent,
     ImageListComponent,
     ImageComponent,
-    HomeComponent
+    HomeComponent,
+    RedsocialComponent
   ],
   imports: [
     BrowserModule,
@@ -66,11 +70,13 @@ import { HomeComponent } from './components/home/home.component';
     FormsModule,
     HttpClientModule,
     AngularFireDatabaseModule,
-    ReactiveFormsModule                                                                                                                                                   
+    ReactiveFormsModule,
+    MDBBootstrapModule.forRoot()                                                                                                                                                   
 
   ],
   providers: [AngularFireAuth],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ NO_ERRORS_SCHEMA ]
 })
 
 export class AppModule { }
