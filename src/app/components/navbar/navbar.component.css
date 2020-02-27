@@ -5,6 +5,10 @@ header{
 
 }
 
+.container-navbar-home {
+  background-color: #3f729b;
+}
+
 
 .imagen-logo{
   height: 90px;
@@ -13,6 +17,8 @@ header{
   border:10px solid #f2f2f2;
 
 }
+
+b{color: #fff;}
 .link-fenpof,.container-imagen-logo,.container-title-and-description{
   display:none;
 }
