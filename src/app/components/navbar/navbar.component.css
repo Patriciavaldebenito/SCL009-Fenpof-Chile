@@ -7,6 +7,7 @@ header{
 
 .container-navbar-home {
   background-color: #3f729b;
+  padding:0 !important;
 }
 
 
@@ -38,11 +39,14 @@ h1.title,h4.description{
   align-self: center;
 }
 
-
 /*.container-imagen-logo.description{}*/
 
 @media(min-width:767px){
- .container-imagen-logo,.container-title-and-description{
+  .container-navbar-home{
+
+  padding: 1rem 0 !important;
+}
+.container-imagen-logo,.container-title-and-description{
     display: flex;
     padding: 1rem 2rem;
     border-bottom: 1px solid #f4f4f4;

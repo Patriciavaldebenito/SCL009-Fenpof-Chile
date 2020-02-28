@@ -1,5 +1,5 @@
 <header>
-  <div class="row">
+  <div class="row mx-0">
 
     <div class=" col-md-3 col-lg-3 col-xl-3  container-imagen-logo">
       <img src="../../../assets/img/logon.jpg" alt="Logo IMAGEN Fundacion Fenpof" class="img-fluid imagen-logo"
@@ -13,7 +13,7 @@
 
     </div>
 
-    <div class="col-12 container-navbar-home py-3">
+    <div class="col-12 container-navbar-home">
       <!--Navbar-->
       <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false">
 
@@ -36,7 +36,7 @@
               <a class="nav-link waves-light" mdbWavesEffect routerLink="/organization">Organizaciones</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/galery">Galería</a>
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/support">Testimonios </a>
             </li>
 
             <!-- Dropdown -->
@@ -45,9 +45,9 @@
                 mdbWavesEffect>
                 Galería y más<span class="caret"></span></a>
               <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/events"><b>Eventos</b></a>
-                <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/support">Testimonios</a>
-                <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/public">información Legal</a>
+                <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/events">Eventos</a>
+                <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/galery">Galería</a>
+                <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/public">información Legal</a> 
                 <div class="divider dropdown-divider"></div>
                 <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/redsocial">Redes Sociales</a>
               </div>
@@ -58,29 +58,22 @@
 
           <ul class="navbar-nav ml-auto nav-flex-icons">
             <li class="nav-item">
-              <a class="nav-link">
-                <mdb-icon fab icon="twitter"></mdb-icon>
+              <a  href="https://twitter.com/fenpofchile?lang=en" class="nav-link" target="_blank">
+               <i class="fab fa-facebook-f" style="color: #fff;"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">
-                <mdb-icon fab icon="google-plus"></mdb-icon>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">
-                <div class="btn-group" mdbDropdown>
-                  <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
-                  <div class="dropdown-menu dropdown-menu-right dropdown-primary">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="divider dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-                </div>
-              </a>
-            </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/fenpofchile?lang=en" class="nav-link" target="_blank">
+              <i class="fab fa-twitter"  style="color: #fff;"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/home" class="nav-link">
+              <i class="fas fa-home"  style="color: #fff;"></i>
+            </a>
+          </li>
+          
+       
           </ul>
         </links>
         <!-- Collapsible content -->

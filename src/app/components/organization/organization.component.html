@@ -1,8 +1,8 @@
-<section class="p-4 mx-0">
+<section class="p-4 ">
 
-  <div class="row mx-4">
+  <div class="row mx-0">
 
-    <div class="col-12  py-2">
+    <div class="col-12 py-2">
       <h2>Organizaciones</h2>
 
     </div>
@@ -11,7 +11,7 @@
 
     <div class="col-12  py-2  mx-1">
 
-      <div class="mx-5">
+      <div class="mx-2">
 
         <ng-container *ngFor="let Data of posts">
           <div class="header-organization">
@@ -23,10 +23,10 @@
             <img src="{{ Data.srcImg }}" alt="imagen coorporativa o representativa de {{ Data.name }}" class="img-fluid"
               style="height: 150px;">
           </div>
-          <div class="information-data-organization pt-5 mx-5">
-            <ul>
+          <div class="information-data-organization pt-5 mx-0">
+            <ul style="list-style:none;">
               <li>{{ Data.representative }}</li>
-              <li>{{ Data.contact }}</li>
+              <li>+{{ Data.contact }}</li>
               <li>{{ Data.email }}</li>
               <li><a href="{{ Data.website }}">Visita el Sitio Web</a></li>
               <br>
